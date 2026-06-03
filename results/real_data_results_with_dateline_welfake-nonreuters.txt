@@ -1,0 +1,12 @@
+Experiment: ISOT vs welfake-nonreuters  [with_dateline]
+Seeds: 3  |  Dateline stripped: False
+EPOCHS=5  BATCH_SIZE=64  LR=0.001  LAMBDA=0.7  ALPHA=0.5  BETA=0.2  GAMMA=0.3  EMA_DECAY=0.85  MAX_PER_CLASS=3000
+
+Method                                In-dataset              Cross-dataset           Gap
+------------------------------------------------------------------------------------------
+Baseline (no suppression)             0.9822 +/- 0.0017       0.7459 +/- 0.0051       0.2363 +/- 0.0059
+Static entropy + hard mask            0.9811 +/- 0.0034       0.7406 +/- 0.0101       0.2405 +/- 0.0068
+Static entropy + soft mask            0.9778 +/- 0.0055       0.7405 +/- 0.0022       0.2373 +/- 0.0034
+Dynamic attribution gate              0.9811 +/- 0.0029       0.7385 +/- 0.0079       0.2426 +/- 0.0055
+
+Gap = In-dataset acc - Cross-dataset acc.  Smaller = less publisher-leakage.
