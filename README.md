@@ -4,6 +4,8 @@
 **Author:** Jawad Konialee
 
 ---
+<img width="9363" height="6623" alt="poster for deep learning project-1" src="https://github.com/user-attachments/assets/3727cee9-e27e-45ee-a88a-3f0b3e29a008" />
+
 
 ## Project Overview
 
